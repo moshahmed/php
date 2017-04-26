@@ -1,6 +1,9 @@
-PHPU=C:/xampp/php/php.exe ./phpunit.phar
+PHP=C:/xampp/php/php.exe
+PHPU=$(PHP) phpunit.phar
 
 testit::
 	-$(PHPU) CalculatorTest.php
-	-$(PHPU) StackTest.php
 	-$(PHPU) DataTest.php
+	-$(PHPU) StackTest.php
+	-$(PHPU) TestEmpty.php
+	-$(PHP) -f Assertions.php
