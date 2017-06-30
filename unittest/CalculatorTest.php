@@ -20,7 +20,7 @@ class CalculatorTests extends TestCase {
         $this->assertEquals(3, $result);
         $this->assertEquals(3, $this->calculator->add(1, 2));
         $this->assertContains(4, [1, 2, 3]);
-        $this->assertArrayHasKey('foo', ['bar' => 'baz']);
+        $this->assertArrayHasKey('fooz', ['bar' => 'baz']);
     }
 }
 
